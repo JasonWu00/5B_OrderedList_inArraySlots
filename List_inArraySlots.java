@@ -116,11 +116,11 @@ public class List_inArraySlots {
         else {// need space
              // open up space, expanding if necessary
              add( elements[ filledElements-1]);
-      
+
              // move the hole left / shift "subsequent elements" right
              for( int hole = filledElements-1; hole > index; hole--)
                  elements[ hole] = elements[ hole-1];
-      
+
             elements[ index] = value; // store new value
         }
     }
